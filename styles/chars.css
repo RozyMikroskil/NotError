@@ -1,0 +1,113 @@
+* {margin:0;padding:0;}
+
+html,body{
+    background-color: #000;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+}@-webkit-keyframes zero-run-init {
+    from { background-position: 0px 0px; }
+    to { background-position: -275px 0px; }
+}
+
+@-webkit-keyframes zero-run {
+    from { background-position: -110px 0px; }
+    to { background-position: -825px 0px; }
+}
+
+@-webkit-keyframes zero-stand {
+    from { background-position: 0px -50px; }
+    to { background-position: -105px -50px; }
+}
+
+@-webkit-keyframes zero-jumping{
+    from { background-position: 0px -105px;}
+    to {background-position: -550px -105px;}
+}
+
+@-webkit-keyframes zero-motor {
+	from{ background-position:-330px -200px}
+	to {background-position:-541px -200px }
+    
+    1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99%{
+	   width: 110px;
+	}
+}
+
+@-webkit-keyframes zero-motor-run{
+	from{ background-position:-110px -200px }
+	to {background-position: -330px -200px}
+	
+	1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99%{
+	   width: 110px;
+	}
+}
+
+@-webkit-keyframes zero-attack{
+	from { background-position: 0px -438px}
+	to { background-position: -1319px -438px}
+	1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99%{
+	   width: 120px; height: 75px; top:135px;
+	}
+}
+
+@-webkit-keyframes zero-black-init{
+    from { background-position: 0px -720px }
+    to {background-position:-350px -720px }
+    to {background-position:-412px -720px }
+    1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99%{
+	   height: 65px; top:135px;
+	}
+}
+
+@-webkit-keyframes zero-black-run{
+   from { background-position: -17px -918px}
+    to { background-position:  -1050px -918px}
+}
+
+
+@-webkit-keyframes zero-black-attack{
+    from { background-position: 0px -810px }
+    to { background-position: -1031px -810px}
+      1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99%{
+	  width: 105px;  height: 80px; top: 135px;
+	}
+}
+/*
+ zero-jump {
+    from { background-position: 0px -110px; }
+    to { background-position: -550px -110px; }
+}
+*/
+
+#viewport {
+    background-image: url("../images/bg.png");
+    background-position: -6700px -3px;
+    height: 225px;
+    width: 640px;
+}
+
+
+#zero {
+    background-image: url("../images/zeroNew.png");
+    margin: 0 auto;
+    
+    width: 55px;
+    height: 50px;
+    
+    position: absolute;
+    top: 145px;
+    left: 100px;
+    
+   
+    /*
+    -webkit-animation: 
+        zero-run-init 0.8s steps(5, end) 1,
+        zero-run 1s steps(8, end) infinite;
+    */
+
+    -webkit-animation: zero-stand 1s steps(2, end) infinite;
+}
