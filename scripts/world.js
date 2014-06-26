@@ -7,7 +7,7 @@ var zero = {
     motor:false,
     gravity:5,
     bike:false,
-    
+    black:false,
     getPosX: function () {
         var style = window.getComputedStyle(this.el),
             left  = style.left,
